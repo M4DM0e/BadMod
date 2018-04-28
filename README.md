@@ -26,4 +26,4 @@ detect website cms & website scanner  =&> Auto exploiter
 <li>Send to my <a href="mailto:mrsqar@gmail.com">email</a></li>
 </ul>
 <br>
-<h4>Hope you like the tool and have a nice day <3 :D :)</h4>
+<h4>Hope you liked the tool and have a nice day <3 :D :)</h4>
