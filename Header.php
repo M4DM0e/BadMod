@@ -5,7 +5,9 @@
 #*#  Coded by MrSqar Yemeni hacker  #*#
 #*#      							#*#
 #*#     mail : mrsqar@gmail.com		#*#
-#*#  								#*#
+#*#  			 or 				#*#
+#*#        FerzY3@yahoo.com	    	#*#
+#*#									#*#
 #*#      	MaDe In YeMeN			#*#
 #*#									#*#
 #*# Note: Don't change my copyright #*#
@@ -15,6 +17,7 @@
 #*##*##*##*##*##*##*##*##*##*##*##*##*#
 */
 
+// clear the screen
 $uname = php_uname();
 if(preg_match("/Linux/",$uname)){
 // if OS = linux do this command	
@@ -23,7 +26,10 @@ if(preg_match("/Linux/",$uname)){
 // else do this command	
 		system("cls");
 		}
-$version = "v1.0";
+/////|| Variables go ||\\\\\\
+$version = "v2.0";
+$op_system = php_uname();
+if(preg_match("/Linux/",$op_system)){
 $white = "\e[97m";
 $black = "\e[30m\e[1m";
 $yellow = "\e[93m";
@@ -46,6 +52,31 @@ $grey = "\e[37m";
 $cyan = "\e[36m";
 $bold   = "\e[1m";
 $nbold = "\e[1;97m";
+}else{
+// no color in windows 
+$white = "";
+$black = "";
+$yellow = "";
+$orange = "";
+$blue   = "";
+$lblue  = "";
+$cln    = "";
+$green  = "";
+$fgreen = "";
+$red    = "";
+$magenta = "";
+$bluebg = "";
+$lbluebg = "";
+$greenbg = "";
+$lgreenbg = "";
+$yellowbg = "";
+$lyellowbg = "";
+$redbg = "";
+$grey = "";
+$cyan = "";
+$bold   = "";
+$nbold = "";
+}
 $end = $bold.$orange."-==============================================================================-"."\n";
 echo $red.$bold."                                 __________"."\n";
 echo "                              .~#########%%;~."."\n";
@@ -71,9 +102,9 @@ echo $yellow.$bold."                         -============================-     
 echo $yellow.$bold."                          | Name   ".$green."|".$red." BadMod bot $version ".$yellow."|                "."\n";
 echo $yellow.$bold."                          | Author ".$green."|".$blue." MrSqar        ".$yellow."  |                "."\n";
 echo $yellow.$bold."                          | From   ".$green."|".$white." Yemen           ".$yellow."|                "."\n";
+echo $yellow.$bold."                          | Team   ".$green."|".$green." SysteM_CrasherS ".$yellow."|                "."\n";
 echo $yellow.$bold."                         -============================-                "."\n";
-echo $yellow.$bold."\n                       script will be started pls wait "; 
+echo $yellow.$bold."\n       		              STARTING  "; 
 sleep(1);print $red.".";sleep(1);print $white.".";sleep(1);print $black.".\n";
 echo $end;
-
 ?>
