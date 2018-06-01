@@ -1,0 +1,62 @@
+#!/usr/bin/env php
+<?php
+$op_system = php_uname();
+if(@preg_match("/Linux/",$op_system)){
+	$oP = 0;
+}else{
+	$oP = 1;
+}
+
+########################################
+#//||||||||||| check root |||||||||||\\#
+########################################
+if($oP == 0){
+$root = @shell_exec("id");
+if (!preg_match("/root/",$root)){
+		@system("clear");
+		$red    = "\e[91m";
+		echo $red."\n[~] please run script as root "."\n\n";
+		exit;
+	}
+}
+/// End
+$uname = php_uname();
+if(!preg_match("/Linux/",$uname)){
+echo "  [-] you don't need install it , you'r Windows user just run the script without install . \n\n";	
+exit();
+}
+if(!file_exists("/bin/badmodF")){
+system("clear");
+echo "\n	[+] You've already installed it \n";
+echo "	[+] You can run the tool by this command \n ";
+echo "	[ sudo badmod ] \n ";
+
+exit();
+}
+$TooL = base64_decode("I2luY2x1ZGU8aW9zdHJlYW0+CiNpbmNsdWRlPHN0cmluZz4KI2luY2x1ZGU8c3RkbGliLmg+CnVzaW5nIG5hbWVzcGFjZSBzdGQ7CmludCBtYWluKCl7CnN5c3RlbSgiY2xlYXIiKTsKc3lzdGVtKCIvYmluL2JhZG1vZEYvQmFkTW9kLnBocCIpOwp9Cg==");
+@mkdir("/bin/badmodF",0755);
+@mkdir("/bin/badmodF/result",0755);
+@mkdir("/bin/badmodF/BackDoor",0755);
+@mkdir("/bin/badmodF/ScreenShots",0755);
+@mkdir("/bin/badmodF/SingleScan",0755);
+@mkdir("/bin/badmodF/wordlist",0755);
+@shell_exec("cp *.* /bin/badmodF");
+@shell_exec("cp BackDoor/*.* /bin/badmodF/BackDoor");
+@shell_exec("cp ScreenShots/*.* /bin/badmodF/ScreenShots");
+@shell_exec("cp wordlist/*.* /bin/badmodF/wordlist");
+$tOOl = fopen("/bin/badmod.cpp","w+");
+fwrite($tOOl,$TooL);
+fclose($tOOl);
+@shell_exec("g++ /bin/badmod.cpp -o /bin/badmod");
+@shell_exec("cp /bin/badmod /bin/BadMod");
+@shell_exec("rm -rf /bin/badmod.cpp");
+system("clear");
+sleep(2);
+echo "	[!] Installing \n ";
+sleep(2);
+echo "	[+] Tool has been installed successfully \n ";
+sleep(1);
+echo "	[+] You can run the tool by this command \n ";
+echo "	[ sudo badmod ] \n ";
+exit();
+?>
