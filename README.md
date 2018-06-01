@@ -1,29 +1,59 @@
-<h1> BadMod auto exploit script </h1>
+<h1> BadMod auto exploit tool </h1>
 <br>
-version 1.0
-
-auto exploiter & get all server sites & bing dorker 
-<br>
-<h2>Installation</h2>
-<code>git clone https://github.com/MrSqar-Ye/BadMod.git</code><br><br>
-<h2>BadMod tool</h2>
- 
-detect website cms & website scanner  =&> Auto exploiter 
-<img src="https://f.top4top.net/p_7560jdo21.png" style="max-width:100%;">
-<br>
-<b> Exploit : <br>
-<b> [!] Wordpress <br>
-<b> [+] joomla <br>
-<b> [!] drupal <br>
-<b> [+] Cms made simple <br>
-<br>
-<h2>Video</h2>
-<a href=""><img src="https://c.top4top.net/p_756mghdw1.png" style="max-width:100%;"></a>
-<hr>
-<h2>For any bug</h2>
-<ul>
-<li>Submit new issue</li>
-<li>Send to my <a href="mailto:mrsqar@gmail.com">email</a></li>
+<h2>Version 2.0</h2>
+<ul> 
+<li>Fixed colors bug</li>
+<li>Fixed permissions bug</li>
+<li>Added new option to scan single target</li>
+<li>Added new option to scan joomla & wordpress plugins</li>
 </ul>
 <br>
-<h4>Hope you liked the tool and have a nice day <3 :D :)</h4>
+<h2>Installation</h2>
+<ul> 
+<li>Install tool</li>
+<code>git clone https://github.com/MrSqar-Ye/BadMod.git</code>
+<li>Install php</li>
+<code>sudo apt-get install php</code>
+<li>Install php curl</li>
+<code>sudo apt-get install php-curl</code>
+</ul>
+<br>
+<h2>Screen shots</h2>
+<br>
+<HR>
+<h3>Header</h3><br>
+<br>
+<img src="ScreenShots/header.png" >
+<br>
+<HR>
+<br>
+<h3>Installation</h3><br>
+<br>
+<img src="ScreenShots/install.png" >
+<br>
+<h3>Option 1 - Get all server sites</h3><br>
+<ul> 
+<li>Fast tool to get all server sites .</li>
+</ul>
+<br>
+<img src="ScreenShots/option1.png" >
+<br>
+<HR>
+<h3>Option 2 - generate random IP's</h3><br>
+<br>
+<img src="ScreenShots/option2.png" >
+<br>
+<HR>
+
+<h2>Video</h2><br>
+<br>
+<a href="http://www.youtube.com" ><img src="ScreenShots/header.png" ></a>
+<br>
+<hr>
+<h2>Report bug.</h2>
+<ul>
+<li>Submit new issue</li>
+<li>Send to my <a href="mailto:mrsqar@gmail.com">Email</a></li>
+</ul>
+<br>
+<h4>i Hope you like the tool, <3 :D :)</h4>
