@@ -29,8 +29,12 @@
 <br>
 <h3>Installation</h3><br>
 <br>
-  <code>chmod +x INSTALL</code>
-   <code>./INSTALL</code>
+<ul> 
+<li>Install tool</li>
+  <code>chmod +x INSTALL</code><br>
+  <code>./INSTALL</code><br>
+</ul>
+
 <img src="ScreenShots/install.png" >
 <br>
 <h3>Option 1 - Get all server sites</h3><br>
