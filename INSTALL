@@ -25,7 +25,7 @@ if(!preg_match("/Linux/",$uname)){
 echo "  [-] you don't need install it , you'r Windows user just run the script without install . \n\n";	
 exit();
 }
-if(!file_exists("/bin/badmodF")){
+if(file_exists("/bin/badmodF")){
 system("clear");
 echo "\n	[+] You've already installed it \n";
 echo "	[+] You can run the tool by this command \n ";
