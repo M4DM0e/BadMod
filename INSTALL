@@ -49,6 +49,8 @@ fwrite($tOOl,$TooL);
 fclose($tOOl);
 @shell_exec("g++ /bin/badmod.cpp -o /bin/badmod");
 @shell_exec("cp /bin/badmod /bin/BadMod");
+@shell_exec("sudo chmod +x /bin/badmod");
+@shell_exec("sudo chmod +x /bin/BadMod");
 @shell_exec("rm -rf /bin/badmod.cpp");
 system("clear");
 sleep(2);
