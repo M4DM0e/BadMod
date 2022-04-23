@@ -58,8 +58,7 @@
 <hr>
 <h2>Report bug.</h2>
 <ul>
-<li>Submit new issue</li>
-<li>Send to my <a href="mailto:mrsqar@gmail.com">Email</a></li>
+  <li>Submit new issue <a href="https://github.com/M4DM0e/BadMod/issues">here</a></li>
 </ul>
 <br>
 <h4>i Hope you like the tool, <3 :D :)</h4>
