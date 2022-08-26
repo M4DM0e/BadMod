@@ -216,8 +216,7 @@ start1 : echo $bold.$fgreen;
 echo "\n   [1] Get all server sites  \n";
 echo "\n   [2] Ip generator \n";
 echo "\n   [3] import sites from txt \n";
-echo "\n   [4] Scan single site  \n";
-echo "\n   [5] Exit  \n\n";
+echo "\n   [4] Scan single site  \n\n";
 start2 : echo $white."   [(Exec)]>: ";
 $chos = trim(fgets(STDIN,1024));
 switch($chos){
@@ -526,17 +525,6 @@ echo cms_detecter($target);
 break;
 ###################
 #// option 4 end\\#
-###################
-
-#####################
-#// option 5 start\\#
-#####################
-    case 5 :
-        exit();
-
-        break;
-###################
-#// option 5 end\\#
 ###################
 
 
